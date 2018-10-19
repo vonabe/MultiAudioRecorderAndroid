@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="184dp"
+            android:id="@+id/surfaceView"
+            android:layout_gravity="top" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView4"
+            android:text="test input info compression"/>
+
+        <SeekBar
+            style="@android:style/Widget.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar3"
+            android:layout_marginTop="50dp"
+            android:indeterminate="false"
+            android:progress="80"
+            android:max="99" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="justpff"
+            android:id="@+id/button"
+            android:onClick="onClick"
+            android:background="@drawable/shadowbtn" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="UDP/TCP"
+            android:id="@+id/switchCamera"
+            android:checked="false" />
+    </LinearLayout>
+
+</FrameLayout>

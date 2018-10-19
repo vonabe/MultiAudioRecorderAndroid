@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MultiRecorder</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Setting</string>
+    <string name="action_music">Music</string>
+    <string name="action_camera1">Camera1</string>
+    <string name="action_camera2">Camera2</string>
+    <string name="action_desktop">Desktop</string>
+    <string name="action_microphone">Microphone</string>
+    <string name="action_testlayout">TestLayout</string>
+
+    <string name="text_email">wenkael@yandex.ru</string>
+    <string name="title_activity_test_activitylayout">TestActivitylayout</string>
+
+
+</resources>

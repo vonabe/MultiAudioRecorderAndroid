@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"
+        android:background="@color/dim_foreground_disabled_material_dark"
+        android:layout_above="@+id/button4"
+        android:minHeight="100dp"></View>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="search"
+        android:textColor="#000000"
+        android:id="@+id/button4"
+        android:onClick="addIP"
+        android:background="@drawable/rundedbutton"
+        android:gravity="center_vertical"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IP: 127.0.0.1"
+            android:id="@+id/textView8"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:baselineAligned="false"
+            android:weightSum="100"
+            android:id="@+id/layoutLinearServClie"
+            android:minHeight="50dp">
+
+            <Spinner
+                android:layout_width="284dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner2"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="TO CLIENT"
+                android:id="@+id/button5"
+                android:onClick="addIP"
+                android:layout_above="@+id/addAddress"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/shadowbtn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:weightSum="100"
+            android:minHeight="50dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="addIP"
+                android:id="@+id/button6"
+                android:onClick="addIP"
+                android:layout_above="@+id/spinner"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shadowbtn"
+                android:allowUndo="false" />
+
+            <EditText
+                style="@android:style/Widget.TextView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/editText"
+                android:text="add IP address"
+                android:layout_alignTop="@+id/btnAddIP"
+                android:layout_alignRight="@+id/spinner"
+                android:layout_alignEnd="@+id/spinner"
+                android:layout_above="@+id/spinner"
+                android:layout_toRightOf="@+id/btnAddIP"
+                android:layout_toEndOf="@+id/btnAddIP" />
+
+        </LinearLayout>
+
+        <Spinner
+            style="@style/Platform.Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:id="@+id/spinner3"
+            android:spinnerMode="dropdown"
+            android:touchscreenBlocksFocus="false"
+            android:transitionGroup="false"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="74dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

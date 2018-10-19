@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgDesktopView"
+            android:layout_gravity="center_horizontal|top"
+            android:visibility="visible" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connect"
+            android:id="@+id/btnConnectDesktop"
+            android:layout_gravity="center_horizontal|bottom"
+            android:onClick="connect"
+            android:background="@drawable/shadowbtn" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="LENGTH PACKAGE"
+                android:id="@+id/textView3"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spinDesktopSizeNpS"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@+id/spinDesktopSizeNpS"
+                android:layout_alignEnd="@+id/spinDesktopSizeNpS" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinDesktopSizeNpS"
+                android:spinnerMode="dialog"
+                android:background="#ff9800"
+                android:layout_alignBottom="@+id/switch1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/seekBar2"
+                android:layout_alignEnd="@+id/seekBar2" />
+
+            <SeekBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBar2"
+                android:layout_gravity="center"
+                style="@android:style/Widget.SeekBar"
+                android:indeterminate="false"
+                android:visibility="invisible"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/switch1"
+                android:checked="false"
+                style="@style/Base.TextAppearance.AppCompat.Widget.Switch"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="80dp"
+                android:text="UDP/TCP" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
