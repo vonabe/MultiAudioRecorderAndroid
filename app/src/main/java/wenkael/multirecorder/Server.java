@@ -18,7 +18,7 @@ import wenkael.multirecorder.MyService;
 public class Server implements Runnable {
 
     final private String TAG_SERVER = "MyServer";
-    final private String pcwIP = "46.173.6.49", localWifi = "192.168.0.100";
+    final private String pcwIP = "127.0.0.1", localWifi = "192.168.0.100";
     final private MyService service;
     private Service.SOCKET socket = null;
     private boolean runnable = false;
